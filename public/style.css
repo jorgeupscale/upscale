@@ -167,7 +167,7 @@ Image credits: unsplash.com
 }
 
 .hero h1 span{
-  color: #C3A54E;
+  color: #1973B6;
 }
 
 .hero h3{
@@ -211,8 +211,8 @@ Image credits: unsplash.com
 .btn.btn-hero:hover,
 .btn.btn-hero:focus {
     color: #f5f5f5;
-    background-color: #C3A54E;
-    border-color: #C3A54E;
+    background-color: #1973B6;
+    border-color: #1973B6;
     outline: none;
     margin: 20px auto;
 }
@@ -229,13 +229,13 @@ Image credits: unsplash.com
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(img/cccc.jpg); 
+  background-image: url(img/cover.jpg); 
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(img/cover.jpg);
+  background-image: url(img/tinst.jpg);
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url(img/mid.jpg);
+  background-image: url(img/rims.jpg);
 }
 
 /********************************/
@@ -302,7 +302,7 @@ Image credits: unsplash.com
   padding-top: 17px;    
   width: 50px;
   font-size: 25px;
-  color: #C3A54E;
+  color: #1973B6;
   text-transform: uppercase;
   float: left;
   display: block;
@@ -549,7 +549,7 @@ scroll {  0% {
 }
 
 .work_section h1 span{
-  color: #C3A54E;
+  color: #1973B6;
 }
 
 .bs-example{
@@ -608,7 +608,7 @@ scroll {  0% {
 
 
 .getit_area{
-  background: #C3A54E;
+  background: #1973B6;
 }
 
 .getit_area h1{
@@ -636,7 +636,7 @@ scroll {  0% {
 }
 
 .portfolio_section h1{
-  color: #C3A54E;
+  color: #1973B6;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -824,7 +824,7 @@ scroll {  0% {
 }
 
 .skill_section h2 span{
-  color: #C3A54E;
+  color: #1973B6;
 }
 
 .progress .progress-bar.six-sec-ease-in-out {
@@ -856,7 +856,7 @@ scroll {  0% {
 }
 
 .blog_section h1 span{
-  color: #C3A54E;
+  color: #1973B6;
 }
 
 .single_blog {
@@ -916,7 +916,7 @@ color: #282a2e;
 
 
 .slider-content:hover .slider-text {
-  background:#C3A54E;
+  background:#1973B6;
 }
 
 .slider-content:hover  .slider-text p{
@@ -961,7 +961,7 @@ color: #282a2e;
 
 
 .price_section h1{
-  color: #C3A54E;
+  color: #1973B6;
   margin-top: 55px;
   text-transform: uppercase;
   font-weight: 600;
@@ -1033,7 +1033,7 @@ line-height: 45px !important;}
 
 
 .testimonial_section h1 span{
-  color: #C3A54E;
+  color: #1973B6;
 }
 
 
@@ -1049,7 +1049,7 @@ line-height: 45px !important;}
 }
 
 .contact_section h1{
-  color: #C3A54E;
+  color: #1973B6;
   text-transform: uppercase;
   font-weight: 600;
 }
