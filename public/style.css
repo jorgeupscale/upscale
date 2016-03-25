@@ -9,7 +9,7 @@ body {
 
 
 h1,h2,h3,h4,h5{
-  color: #333;
+  color: #fff;
 }
 
 a { text-decoration: none; }
@@ -129,8 +129,8 @@ Image credits: unsplash.com
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
-    background-color: #f39c12;
-    border-color: #f39c12;
+    background-color: #1973B6;
+    border-color: #1973B6;
     opacity: .7;
 }
 .fade-carousel .carousel-indicators > li.active {
@@ -292,10 +292,10 @@ Image credits: unsplash.com
 }
 
 .sticky {
-  background-color: rgba(255, 255, 255, 0.93);
+  background-color: #000;
   opacity: 1;
   top: 0px;
-  border-bottom: 1px solid silver;
+  border-bottom: 1px solid white;
 }
 
 .logo {
@@ -534,7 +534,7 @@ scroll {  0% {
 /* ===========work style===========*/
 
 .work_area{
-    background-color: #f8f8f8;
+    background-color: #000;
 }
 
 
@@ -600,7 +600,7 @@ scroll {  0% {
 .tab-pane{
   border: 1px solid #ddd;
   padding: 42px;
-  background-color:#ffffff; 
+  background-color:#1973B6; 
 }
 
 
