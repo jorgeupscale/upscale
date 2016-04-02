@@ -48,8 +48,8 @@
         <ul class="main_menu">
           <li><a href=".hero">Home</a></li>
           <li><a href=".work_section">About</a></li>
-          <li><a href=".service_area">What We Do</a></li>
-          <li><a href=".blog_area">Cars</a></li>
+          <li><a href=".blog_area">Exotic Cars</a></li>
+        <li><a href=".eco_area">Economic Cars</a></li>
           <li><a href=".contact_area">Contact</a></li>                    
         </ul>
       </nav>
@@ -78,7 +78,7 @@
             <h1><img src="img/logo.png"height="200px" width="400px" alt=""> </h1>        
             <h3></h3>
         </hgroup>
-        <a href="#.work_section" class="scrollupto"><button class="btn btn-hero btn-lg" role="button">Click Here</button></a>
+        <div class="blog_area"><a href="#.blog_area" class="scrollupto"><button class="btn btn-hero btn-lg" role="button">Click Here</button></a></div>
       </div>
     </div>
     <div class="item slides">
@@ -86,9 +86,9 @@
       <div class="hero">        
         <hgroup>
             <h1><img src="img/logo.png"height="200px" width="400px" alt=""></h1>        
-            <h3></h3>
+            <h2>We come<span> to you</span></h2> 
         </hgroup>       
-        <button class="btn btn-hero btn-lg" href="#.skii_section"role="button">Click Here</button>
+        <button class="btn btn-hero btn-lg"  href="#.blog_section"role="button">Click Here</button>
       </div>
     </div>
     <div class="item slides">
@@ -98,7 +98,7 @@
             <h1><img src="img/logo.png"height="200px" width="400px" alt=""></h1>        
             <h3></h3>
         </hgroup>
-        <button class="btn btn-hero btn-lg" href="#.service_area "role="button">Click Here</button>
+        <button class="btn btn-hero btn-lg" href="#.blog_section "role="button">Click Here</button>
       </div>
     </div>
   </div> 
@@ -107,7 +107,7 @@
   <div class="container">
     <div class="row">  
       <div class="work_section">
-        <center><img src="img/logo.png" height="150px" width="250px" alt=""></center>
+        <center><img src="img/logo.png" height="100px" width="200px" alt=""></center>
         <h1 class="wow bounceInLeft">About <span>Upscale Car Rental</span></h1>
           <div class="col-md-12 wow bounceInRight animated">
             <div class="bs-example">
@@ -137,7 +137,7 @@
   <div class="container">
     <div class="row">
       <div class="getit_section">
-        <h1><img src="img/logo.png" height="150px" width="300px" alt=""></h1>
+        <h1><img src="img/logo.png" height="100px" width="200px" alt=""></h1>
       </div>  
     </div>
   </div>
@@ -216,12 +216,14 @@
       </div>
 
     <ul id="filters" class="clearfix">
-      <li><span class="filter active" data-filter="conv suv fssuv sedan coupe">All</span></li>
+      <li><span class="filter active" data-filter="conv suv fssuv sedan coupe ex">All</span></li>
       <li><span class="filter" data-filter="conv">Convertibles</span></li>
       <li><span class="filter" data-filter="suv">SUVs</span></li>
       <li><span class="filter" data-filter="fssuv">Full size SUVs</span></li>
       <li><span class="filter" data-filter="sedan">Sedans</span></li>
       <li><span class="filter" data-filter="coupe">Coupes</span></li>
+
+      <li><span class="filter" data-filter="ex">Exotic</span></li>
     </ul>
 
     <div id="portfoliolist">
@@ -239,7 +241,7 @@
       </div>        
 
 
-      <div class="portfolio card" data-cat="card">
+      <div class="portfolio coupe ex" data-cat="coupe ex">
         <div class="portfolio-wrapper">     
           <img src="img/i8.png" height="200px" width="250px" alt="" />
           <div class="label">
@@ -251,7 +253,7 @@
           </div>
         </div>
       </div> 
-      <div class="portfolio app" data-cat="app">
+      <div class="portfolio ex" data-cat="ex">
         <div class="portfolio-wrapper">     
           <img src="img/ferr.png" height="200px" width="250px" alt="" />
           <div class="label">
@@ -286,20 +288,9 @@
           </div>
         </div>
       </div>        
-      
-      <div class="portfolio sedan" data-cat="sedan">
-        <div class="portfolio-wrapper">     
-          <img src="img/a7.png" height="200px" width="250px" alt="" />
-          <div class="label">
-            <div class="label-text">
-              <a class="text-title">Audi A7<br><br>Call for Pricing & Details</a>
-            </div>
-            <div class="label-bg"></div>
-          </div>
-        </div>
-      </div>  
+     
             
-      <div class="portfolio coupe" data-cat="coupe">
+      <div class="portfolio sedan" data-cat="sedan">
         <div class="portfolio-wrapper">
           <img src="img/bm.png" height="200px" width="250px" alt="" />
           <div class="label">
@@ -312,7 +303,7 @@
         </div>
       </div>      
       
-      <div class="portfolio card" data-cat="card">
+      <div class="portfolio conv" data-cat="conv">
         <div class="portfolio-wrapper">     
           <img src="img/cam.png" height="200px" width="250px" alt="" />
           <div class="label">
@@ -324,8 +315,32 @@
           </div>
         </div>
       </div>  
-
-      <div class="portfolio logos" data-cat="logos">
+      <div class="portfolio ex conv" data-cat="ex conv">
+        <div class="portfolio-wrapper">     
+          <img src="img/r8.png" height="200px" width="250px" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Audi R8<br><br>$1,050/day $6,300/week</a>
+              <span class="text-category"> </span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>   
+         
+      <div class="portfolio coupe ex" data-cat="coupe ex">
+        <div class="portfolio-wrapper">     
+          <img src="img/rollr.png" height="200px" width="250px" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Rolls Royce Wraith<br><br>$2,250/day $13,500/week</a>
+              <span class="text-category"> </span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio ex" data-cat="ex">
         <div class="portfolio-wrapper">     
           <img src="img/lam.png" height="200px" width="250px" alt="" />
           <div class="label">
@@ -337,12 +352,25 @@
           </div>
         </div>
       </div> 
-      <div class="portfolio logos" data-cat="logos">
+       <div class="portfolio conv" data-cat="conv">
+        <div class="portfolio-wrapper">     
+          <img src="img/cc.png" height="200px" width="250px" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Cheverolet Corvette Stingray<br><br>$465/day $2,790/week</a>
+              <span class="text-category"></span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="portfolio suv" data-cat="suv">
         <div class="portfolio-wrapper">     
           <img src="img/gwagon.png" height="200px" width="250px" alt="" />
           <div class="label">
             <div class="label-text">
-              <a class="text-title">Mercedes G63 AMG<br><br>Call for Pricing & Details</a>
+              <a class="text-title">Mercedes G63 AMG<br><br>$614/day $3,684/week</a>
               <span class="text-category"></span>
             </div>
             <div class="label-bg"></div>
@@ -350,7 +378,7 @@
         </div>
       </div>                                  
 
-      <div class="portfolio logos" data-cat="logos">
+      <div class="portfolio ex" data-cat="ex">
         <div class="portfolio-wrapper">     
           <img src="img/sls.png" height="200px" width="250px" alt="" />
           <div class="label">
@@ -362,26 +390,28 @@
           </div>
         </div>
       </div>  
-      <div class="portfolio logos" data-cat="logos">
+
+      <div class="portfolio sedan" data-cat="sedan">
         <div class="portfolio-wrapper">     
-          <img src="img/cc.png" height="200px" width="250px" alt="" />
+          <img src="img/a7.png" height="200px" width="250px" alt="" />
           <div class="label">
             <div class="label-text">
-              <a class="text-title">Cheverolet Corvette<br><br>Call for Pricing & Details</a>
-              <span class="text-category"></span>
+              <a class="text-title">Audi A7<br><br>Call for Pricing & Details</a>
             </div>
             <div class="label-bg"></div>
           </div>
         </div>
-      </div> 
+      </div>  
+
+     
      
       
-      <div class="portfolio coupe" data-cat="coupe">
+      <div class="portfolio coupe conv" data-cat="coupe conv">
         <div class="portfolio-wrapper">     
           <img src="img/mus.png" height="200px" width="250px" alt="" />
           <div class="label">
             <div class="label-text">
-              <a class="text-title">Ford Mustang GT Shelby<br><br>Call for Pricing & Details</a>
+              <a class="text-title">Ford Mustang GT<br><br>Call for Pricing & Details</a>
               <span class="text-category"></span>
             </div>
             <div class="label-bg"></div>
@@ -392,7 +422,7 @@
                                 
              
 
-      <div class="portfolio logos" data-cat="logos">
+      <div class="portfolio coupe" data-cat="coupe">
         <div class="portfolio-wrapper">     
           <img src="img/dc.png" height="200px" width="250px" alt="" />
           <div class="label">
@@ -404,19 +434,142 @@
           </div>
         </div>
       </div>                                  
- 
-        <div class="portfolio conv" data-cat="conv">
+
+      <div class="portfolio conv coupe" data-cat="conv coupe">
         <div class="portfolio-wrapper">     
-          <img src="img/audi.png" height="200px" width="250px" alt="" />
+          <img src="img/mg.png" height="200px" width="250px" alt="" />
           <div class="label">
             <div class="label-text">
-              <a class="text-title"><br><br>Call for Pricing & Details</a>
-              <span class="text-category"> </span>
+              <a class="text-title">Maserati Gran Turismo Sport<br><br>Call for Pricing & Details</a>
+              <span class="text-category"></span>
             </div>
             <div class="label-bg"></div>
           </div>
         </div>
-      </div>   
+      </div>  
+
+      <div class="portfolio sedan" data-cat="sedan">
+        <div class="portfolio-wrapper">     
+          <img src="img/pp.png" height="200px" width="250px" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Porsche Panamera<br><br>Call for Pricing & Details</a>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>  
+
+     
+     
+      
+      <div class="portfolio fssuv" data-cat="fssuv">
+        <div class="portfolio-wrapper">     
+          <img src="img/cs.png" height="200px" width="250px" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Cheverolet Suburban<br><br>$175/day $1,050/week </a>
+              <span class="text-category"></span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>                                                                              
+      
+                                
+             
+
+      <div class="portfolio suv" data-cat="suv">
+        <div class="portfolio-wrapper">     
+          <img src="img/cay.png" height="200px" width="250px" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Porsche Cayenne<br><br>$350/day $2,100/week</a>
+              <span class="text-category"></span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>  
+        <h1>Economic Car Selection</h1>
+                             
+                            
+      
+             
+                    
+     
+
+<div class="eco_area">
+  <div class="container">
+      <div class="portfolio_section">
+          <div class="col-md-12 portfolio_top">
+             
+          </div>  
+      </div>
+
+    <ul id="filters" class="clearfix">
+      <li><span class="filter active" data-filter="eco mini suvss">All</span></li>
+      <li><span class="filter" data-filter="eco">Full Size Economy</span></li>
+      <li><span class="filter" data-filter="mini">Mini-Vans</span></li>
+      <li><span class="filter" data-filter="suvss">SUVs</span></li>
+
+    </ul>
+
+    <div id="portfoliolist">
+      
+      <div class="portfolio eco" data-cat="eco">
+        <div class="portfolio-wrapper">       
+          <img src="img/tc.png" height="200px" width="250px" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Toyota Corolla<br><br>$55/day $330/week</a>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>        
+
+
+      <div class="portfolio mini" data-cat="mini">
+        <div class="portfolio-wrapper">     
+          <img src="img/ts.png" height="200px" width="250px" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Toyota Sienna<br><br>$105/day $630/week</a>
+              <span class="text-category"></span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div> 
+      <div class="portfolio suvss" data-cat="suvss">
+        <div class="portfolio-wrapper">     
+          <img src="img/nx.png" height="200px" width="250px" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title"> Nissan Xterra<br><br>$90/day $540/week</a>
+              <span class="text-category"></span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>  
+      <div class="portfolio suvss" data-cat="suvss">
+        <div class="portfolio-wrapper">     
+          <img src="img/jc.png" height="200px" width="250px" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Jeep Compass<br><br>$90/day $540/week</a>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>    
+      
+        
+         
+      
+        
                              
                             
       
@@ -442,7 +595,7 @@
     <div class="row">
       <div class="contact_section">
           <h1>Contact us</h1>
-          <p><b>We bring your rental to you! Call now.</b></p>
+          <p><b>What car are you looking for? We'll bring the rental to you! Call now.</b></p>
 
                     <div class="col-md-6">
                         <div class="contact_form">
