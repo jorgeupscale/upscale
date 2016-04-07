@@ -1,7 +1,7 @@
 <?php
 if($_POST)
 {
-    $to_Email       = "info@upscalecarrental.com"; //Replace with recipient email address
+    $to_Email       = "re@escalatecorp.com"; //Replace with recipient email address
     $subject        = 'Upscale Car Rental '; //Subject line for emails
     
     
