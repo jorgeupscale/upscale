@@ -185,67 +185,55 @@
    CONTACT FORM JS
    ========================================================================== */
 
-  $(document).ready(function() {
-      $("#submit_btn").click(function() { 
-          //get input field values
-          var user_name       = $('input[name=name]').val(); 
-          var user_email      = $('input[name=email]').val();
-          var user_phone      = $('input[name=phone]').val();
-          var user_message    = $('textarea[name=message]').val();
-          
-          //simple validation at client's end
-          //we simply change border color to red if empty field using .css()
-          var proceed = true;
-          if(user_name==""){ 
-              $('input[name=name]').css('border-color','red'); 
-              proceed = false;
-          }
-          if(user_email==""){ 
-              $('input[name=email]').css('border-color','red'); 
-              proceed = false;
-          }
-          if(user_phone=="") {    
-              $('input[name=phone]').css('border-color','red'); 
-              proceed = false;
-          }
-          if(user_message=="") {  
-              $('textarea[name=message]').css('border-color','red'); 
-              proceed = false;
-          }
+  $(document).on('ready', function(){
 
-          //everything looks good! proceed...
-          if(proceed) 
-          {
-              //data to be sent to server
-              post_data = {'userName':user_name, 'userEmail':user_email, 'userPhone':user_phone, 'userMessage':user_message};
-              
-              //Ajax post data to server
-              $.post('contact_me.php', post_data, function(response){  
-                  
-                  //load json data from server and output message     
-                  if(response.type == 'error')
-                  {
-                      output = '<div class="error">'+response.text+'</div>';
-                  }else{
-                  
-                      output = '<div class="success">'+response.text+'</div>';
-                      
-                      //reset values in all input fields
-                      $('#contact_form input').val(''); 
-                      $('#contact_form textarea').val(''); 
-                  }
-                  
-                  $("#result").hide().html(output).slideDown();
-              }, 'json');
-              
-          }
-      });
-      
-      //reset previously set border colors and hide all message on .keyup()
-      $("#contact_form input, #contact_form textarea").keyup(function() { 
-          $("#contact_form input, #contact_form textarea").css('border-color',''); 
-          $("#result").slideUp();
-      });
-      
-  });
+ $('#contactForm').on('submit', function(){
+
+   event.preventDefault(); // prevent default submit behaviour
+
+   // get values from FORM
+   var name = $("input#name").val(),
+       email = $("input#email").val(),
+       phone = $("input#phone").val(),
+       message = $("input#message").val()
+
+   console.log({name: name, email: email, phone: phone, message: message});
+   // Check for white space in name for Success/Fail message
+   $.ajax({
+     url: "/",
+     type: "POST",
+     data: {
+       name: name,
+       email: email,
+       phone: phone,
+       message: message,
+     },
+     cache: false,
+     success: function() {
+       // Success message
+       $('#success').html("<div class='alert alert-success'>");
+       $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+           .append("</button>");
+       $('#success > .alert-success')
+           .append("<strong>Your information has been sent. </strong>");
+       $('#success > .alert-success')
+           .append('</div>');
+
+       //clear all fields
+       $('#contactForm').trigger("reset");
+     },
+     error: function() {
+       // Fail message
+       $('#success').html("<div class='alert alert-danger'>");
+       $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+           .append("</button>");
+       $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
+       $('#success > .alert-danger').append('</div>');
+       //clear all fields
+       $('#contactForm').trigger("reset");
+     }
+   })
+ })
+
+});
         
